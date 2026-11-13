@@ -1,0 +1,97 @@
+
+name: Update profile projects
+
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Update project list
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const username = context.repo.owner;
+            const profileRepo = context.repo.repo;
+
+            const { data: repos } = await github.rest.repos.listForUser({
+              username,
+              type: "owner",
+              per_page: 100,
+              sort: "updated"
+            });
+
+            const projects = [];
+
+            for (const repo of repos) {
+              if (
+                repo.private ||
+                repo.fork ||
+                repo.archived ||
+                repo.name.toLowerCase() === profileRepo.toLowerCase()
+              ) continue;
+
+              const { data: topicsData } =
+                await github.rest.repos.getAllTopics({
+                  owner: username,
+                  repo: repo.name
+                });
+
+              if (!topicsData.names.includes("project")) continue;
+
+              projects.push({
+                        name: repo.name,
+                        updated_at: repo.updated_at,
+                        description: repo.description || "A project I'm working on.",
+                        url: repo.html_url,
+                        language: repo.language,
+                        homepage: repo.homepage
+            });
+            }
+
+            projects.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+            const content = projects.length
+              ? projects.slice(0, 6).map(project => {
+                  const details = [
+                    project.language,
+                    project.homepage
+                      ? `[Live demo](${project.homepage})`
+                      : null
+                  ].filter(Boolean).join(" · ");
+
+                  return `### [${project.name}](${project.url})\n${project.description}\n${details ? `\n${details}` : ""}`;
+                }).join("\n\n")
+              : "_No repositories tagged with the `project` topic yet. Add that topic to a public repository to feature it here._";
+
+            const fs = require("fs");
+            const readmePath = "README.md";
+            let readme = fs.readFileSync(readmePath, "utf8");
+
+            const start = "<!-- PROJECTS:START -->";
+            const end = "<!-- PROJECTS:END -->";
+
+            if (!readme.includes(start) || !readme.includes(end)) {
+              throw new Error("Project markers not found in README.md");
+            }
+
+            const before = readme.split(start)[0];
+            const after = readme.split(end)[1];
+
+            readme = `${before}${start}\n${content}\n${end}${after}`;
+
+            fs.writeFileSync(readmePath, readme);
+      - name: Commit updated README
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update profile projects"
