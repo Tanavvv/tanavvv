@@ -60,7 +60,7 @@ I'm always learning, experimenting with new technologies, and expanding my toolk
 Projects are collected automatically from my public GitHub repositories tagged with the **`project`** topic.
 
 <!-- PROJECTS:START -->
-_No repositories tagged with `project` yet. Add the `project` topic to a repository and it will appear here after the next refresh._
+_No repositories tagged with the `project` topic yet. Add that topic to a public repository to feature it here._
 <!-- PROJECTS:END -->
 
 <sub>Project list refreshes automatically every day. You can also run the **Update project list** workflow manually.</sub>
