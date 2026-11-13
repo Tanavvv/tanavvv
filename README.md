@@ -1,86 +1,62 @@
-<div align="center">
+ <div align="center">
 
 # Tanav
 
-### Aspiring software developer · Product-minded · Always experimenting
+### Aspiring AI Engineer · Software Developer
 
-**Building useful software. Making things feel effortless.**
+Interested in building things, exploring ideas, and figuring out how technology can be used in interesting ways.
 
-[LinkedIn](https://www.linkedin.com/in/tanav-/) · [Instagram](https://www.instagram.com/tvnvvv/) · [GitHub](https://github.com/tanavvv)
-
-</div>
-
----
-
-I'm a Computer Science student interested in building software that simplifies everyday life.
-
-I enjoy coming up with ideas, experimenting with them, and turning them into useful products. I'm interested in creating software that solves real problems while making the experience enjoyable for the people using it.
-
-<div align="center">
-
-`● BUILDING` Useful products&nbsp;&nbsp; · &nbsp;&nbsp;`● EXPLORING` New technologies&nbsp;&nbsp; · &nbsp;&nbsp;`● LEARNING` Always
+[LinkedIn](https://www.linkedin.com/in/tanav-/) · [Instagram](https://www.instagram.com/tvnvvv/)
 
 </div>
 
 ---
 
-## 01 — What I want to build
+I'm a BCA Computer Science student who enjoys coming up with ideas and trying to bring them to life through code.
 
-I'm not limiting myself to a particular domain. If there's an interesting idea worth building, I'm interested in exploring it.
+I started with web development, but my interests have grown beyond that. Lately, I've been exploring AI and how it can be used to build better software and new kinds of products.
 
-- **Useful software products** that solve real-world problems, including problems people might not realise software could solve.
-- **SaaS & digital products** that deliver practical value and can grow beyond a single use case.
-- **Automation tools** that reduce repetitive tasks and make everyday activities easier.
-- **Intelligent applications** that recognise patterns, adapt, and provide genuinely useful insights.
-- **AI-powered experiences** where AI brings meaningful value rather than being added just for the sake of it.
+## 01 — Things I'm interested in
 
-## 02 — How I approach software
+- Building software that people actually find useful.
+- Exploring AI and finding interesting ways to use it.
+- Creating SaaS products and experimenting with product ideas.
+- Automating things that don't need to be done manually.
+- Learning how different technologies work together.
 
-| Principle | What it means |
+## 02 — How I like to build
+
+- Start with an idea or a problem.
+- Figure out the simplest way to approach it.
+- Build something that actually works.
+- Experiment, make mistakes, and improve it.
+- Use AI as a tool, not a replacement for understanding what I'm building.
+
+## 03 — What I use
+
+| | |
 |---|---|
-| **Make things easier** | Software should simplify life, not make it more complicated. |
-| **Useful over complex** | A product doesn't need dozens of features to provide real value. |
-| **Thoughtful design** | Functionality matters, but so does the experience of using it. |
-| **Software first** | The core product should work independently. AI should complement and enhance it. |
-| **Build, experiment, improve** | Ideas become valuable when they're turned into real products. |
+| **Languages** | Python, JavaScript, TypeScript, HTML, CSS |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **Backend** | Supabase |
+| **Tools** | Git, GitHub, VS Code |
 
-## 03 — Technologies I'm using
+Always picking up something new along the way.
 
-| Area | Toolkit |
-|---|---|
-| **Languages** | Python · JavaScript · TypeScript · HTML · CSS |
-| **Frontend** | React · Next.js · Tailwind CSS |
-| **Backend & data** | Supabase |
-| **Tools** | Git · GitHub · VS Code |
+## 04 — A project I've built
 
-I'm always learning, experimenting with new technologies, and expanding my toolkit.
+### [AquaSafe](https://aqua--safe.vercel.app/)
 
-## 04 — Projects
+A project focused on flood and water contamination risks in Kerala.
 
-Projects are collected automatically from my public GitHub repositories tagged with the **`project`** topic.
+It brings together rainfall data, flood history, and community reports to help people understand potential water-related risks.
 
-<!-- PROJECTS:START -->
-_No repositories tagged with the `project` topic yet. Add that topic to a public repository to feature it here._
-<!-- PROJECTS:END -->
+**Tech:** Next.js, React, TypeScript, Supabase, Leaflet
 
-<sub>Project list refreshes automatically every day. You can also run the **Update project list** workflow manually.</sub>
+[Live website](https://aqua--safe.vercel.app/)
 
-## 05 — Beyond coding
+## 05 — Outside of coding
 
-I'm interested in technology, product thinking, new ideas, and design.
+I enjoy watching music videos, listening to music, and appreciating the creativity behind visuals and design.
 
-I enjoy experimenting, learning things outside my comfort zone, and exploring how seemingly small ideas can turn into genuinely useful products.
-
-I'm still at the beginning of my journey, and that's what makes it exciting.
-
-## 06 — Find me elsewhere
-
-<div align="center">
-
-[LinkedIn](https://www.linkedin.com/in/tanav-/) &nbsp;·&nbsp; [Instagram](https://www.instagram.com/tvnvvv/) &nbsp;·&nbsp; [GitHub](https://github.com/tanavvv)
-
-<br/>
-
-*Fewer distractions. More useful things. Always building.*
-
-</div>
+I'm also someone who likes going down random rabbit holes, discovering new things, and exploring ideas that catch my attention.
